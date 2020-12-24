@@ -1,4 +1,4 @@
-module github.com/argoproj/argo
+module github.com/yuhanjung/argo
 
 go 1.13
 
