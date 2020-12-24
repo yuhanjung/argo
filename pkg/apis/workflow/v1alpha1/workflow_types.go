@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/yuhanjung/argo/util/slice"
+	slice "github.com/yuhanjung/argo/util/slice"
 
 	apiv1 "k8s.io/api/core/v1"
 	policyv1beta "k8s.io/api/policy/v1beta1"
