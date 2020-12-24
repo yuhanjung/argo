@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	
+	"github.com/yuhanjung/argo/util/slice"
 
 	apiv1 "k8s.io/api/core/v1"
 	policyv1beta "k8s.io/api/policy/v1beta1"
@@ -17,25 +17,6 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/util/intstr"
 )
-
-func RemoveString(slice []string, element string) []string {
-	for i, v := range slice {
-		if element == v {
-			return append(slice[:i], slice[i+1:]...)
-		}
-	}
-	return slice
-}
-
-func ContainsString(slice []string, element string) bool {
-	for _, item := range slice {
-		if item == element {
-			return true
-		}
-	}
-	return false
-}
-
 
 // TemplateType is the type of a template
 type TemplateType string
